@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/fl_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="10dp" android:text="文本"/>
+
+    </FrameLayout>
+
+    <com.hyc.imitate_uc_ui.view.DeformationLinearLayout
+        android:id="@+id/dll_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fl_header"
+        android:background="@color/yellow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="10dp" android:text="文本"/>
+
+    </com.hyc.imitate_uc_ui.view.DeformationLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/dll_container"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="推荐"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suggest"
+            android:layout_below="@+id/dll_container"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="推荐"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="推荐"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="推荐"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_news_list"
+            android:layout_below="@+id/dll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:padding="10dp" android:text="内容1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:padding="10dp" android:text="内容2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:padding="10dp" android:text="内容3"/>
+
+
+        </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_headline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="头条"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
